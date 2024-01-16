@@ -9,13 +9,15 @@
     using UnityEngine.Rendering;
     using MainMenuThemeReplacer;
     using System;
+    using Game.Settings;
 
     public sealed class Mod : IMod
     {
         /// <summary>
         /// Mod properties.
         /// </summary>
-        public const string ModName = "MainMenuThemeReplacer";                    
+        public const string ModName = "MainMenuThemeReplacer";
+
         public static Mod Instance { get; private set; }
         internal ILog Log { get; private set; }
         public void OnLoad()

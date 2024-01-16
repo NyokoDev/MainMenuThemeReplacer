@@ -23,14 +23,16 @@
   <ItemGroup>
     <None Remove="l10n.csv" />
     <None Remove="Themes\CitiesSkylines1.ogg" />
-    <None Remove="Themes\MainMenu.ogg" />
+    <None Remove="Themes\CitiesSkylines2OST.ogg" />
+    <None Remove="Themes\ResidentEvil.ogg" />
     <None Remove="Themes\SimCity.ogg" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="l10n.csv" />
     <EmbeddedResource Include="Themes\CitiesSkylines1.ogg" />
-    <EmbeddedResource Include="Themes\MainMenu.ogg" />
+    <EmbeddedResource Include="Themes\CitiesSkylines2OST.ogg" />
+    <EmbeddedResource Include="Themes\ResidentEvil.ogg" />
     <EmbeddedResource Include="Themes\SimCity.ogg" />
   </ItemGroup>
 
@@ -45,6 +47,15 @@
   </ItemGroup>
   
   <ItemGroup>
+    <Reference Include="cohtml.Net">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Cities Skylines II\Cities2_Data\Managed\cohtml.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Colossal.AssetPipeline">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Cities Skylines II\Cities2_Data\Managed\Colossal.AssetPipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Colossal.ATL">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Cities Skylines II\Cities2_Data\Managed\Colossal.ATL.dll</HintPath>
+    </Reference>
     <Reference Include="Colossal.Collections">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Cities Skylines II\Cities2_Data\Managed\Colossal.Collections.dll</HintPath>
     </Reference>
@@ -62,6 +73,12 @@
     </Reference>
     <Reference Include="Colossal.Logging">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Cities Skylines II\Cities2_Data\Managed\Colossal.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Colossal.PSI.Common">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Cities Skylines II\Cities2_Data\Managed\Colossal.PSI.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Colossal.PSI.PdxSdk">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Cities Skylines II\Cities2_Data\Managed\Colossal.PSI.PdxSdk.dll</HintPath>
     </Reference>
     <Reference Include="Colossal.UI">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Cities Skylines II\Cities2_Data\Managed\Colossal.UI.dll</HintPath>
@@ -86,6 +103,9 @@
     </Reference>
     <Reference Include="UnityEngine">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Cities Skylines II\Cities2_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Cities Skylines II\Cities2_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Cities Skylines II\Cities2_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
@@ -180,8 +200,6 @@
   </ItemGroup>
   
   <ItemGroup>
-    <Folder Include="Exporter\" />
-    <Folder Include="Patches\" />
     <Folder Include="Systems\" />
   </ItemGroup>
   
